@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Fraunces';
+    src: url('fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Fraunceslight';
+    src: url('fonts/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  }
+  body{
+    font-size: 14px;
+  }
+  
+  .tagline {
+    font-family: 'MyCustomFont', sans-serif;
+    font-weight: 500;
+  }
+  .text{
+    font-family: 'Fraunces',sans-serif;
+    font-weight: 700;
+    font-size:30px;
+  }
+  .para{
+    font-family: 'MyCustomFont' ,sans-serif;
+    font-weight:400;
+  }
+  button{
+    width: 80%;
+    font-family:'MyCustomFont', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color:hsl(158, 36%, 37%);
+
+  }
+  /* .layout{ */
+    /* display: flex;
+    margin-top:200px;
+    flex-wrap: wrap; */
+    .layout {
+      display: flex;
+      max-width: 700px;
+      min-width: 0px;
+      width: 100%;
+      margin: 100px auto;
+      background-color: white;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      justify-content: center;
+    }
+  
+  .div1{
+    flex:1;
+  }
+  .div2{
+    flex: 1;
+    padding: 20px 30px 20px 30px;
+  }
+ 
+    .image1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    
+    }
+  
+div p{
+  padding-bottom: 5px;
+}
+
+.pricediv{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0px;
+}
+
+.price1{
+  flex:2;
+  font-size: 2rem;
+  font-weight: 900;
+  color: hsl(158, 36%, 37%);
+}
+.price2{
+  flex:1;
+  padding-top: 25px;
+  padding-left: 30px;
+  font-size: 17px;
+}
+img{
+  padding-right: 5px;
+  
+}
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .div1, .div2 {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .image1 {
+    border-radius: 10px 10px 0 0;
+    
+  }
+}
