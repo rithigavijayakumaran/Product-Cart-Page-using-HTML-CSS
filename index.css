@@ -38,10 +38,7 @@
     background-color:hsl(158, 36%, 37%);
 
   }
-  /* .layout{ */
-    /* display: flex;
-    margin-top:200px;
-    flex-wrap: wrap; */
+
     .layout {
       display: flex;
       max-width: 700px;
